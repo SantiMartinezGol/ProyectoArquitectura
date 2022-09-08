@@ -69,11 +69,7 @@ main {
 }
 
 main h2 {
-    /*transform: translate(0px, 0%);
-    transition: all 1s;*/
-  
     animation: slidein 1.5s;
-    
 }   
 
 @keyframes slidein {
