@@ -1,0 +1,55 @@
+.proyecto {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 40px;
+    transition: all 0.3s;
+
+    &__title {
+        padding-top:120px;
+        padding-bottom: 60px;
+    }
+
+    &__imagen {
+        overflow: hidden;
+        box-shadow: 10px 20px 20px -20px; color: black;
+        object-fit: cover;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        &:hover {
+            box-shadow: 10px 20px 20px -5px; color: black;
+            transform: scale(1.05);
+        }
+
+        & h4 {
+            font-size: 20px;
+            padding: 0.5em 0 0.5 0;
+        }
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .proyecto {
+        grid-template-columns: repeat(3,300px);
+    }
+}
+
+@media (max-width: 969px) {
+
+    .proyecto {
+        grid-template-columns: repeat(2,300px);
+    }
+}
+
+@media (max-width: 768px){
+
+    .proyecto {
+        grid-template-columns: 300px;
+    }
+}
