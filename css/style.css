@@ -54,6 +54,10 @@ main h2 {
   .container {
     max-width: 540px; } }
 
+/*Para cambios del header a traves de css en caso de sacar el boostrap*/
+header {
+  background-color: #212529; }
+
 footer {
   font-size: 18px;
   background-color: #212529;
@@ -66,18 +70,8 @@ footer {
   z-index: 70;
   clear: both; }
 
-.carousel-inner {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory; }
-
-.carousel-inner img {
-  flex: 0 0 100%;
-  width: 100%;
-  object-fit: cover;
-  scroll-snap-align: center; }
+body {
+  background-color: #d1d17a; }
 
 /*empieza carousel*/
 .contain {
@@ -212,7 +206,7 @@ fieldset {
 
 .conjunto {
   margin-top: 40px; }
-  .conjunto__mapa {
+  .conjunto__mapa, .conjunto__sociales {
     display: block;
     margin: auto; }
   .conjunto__datos {
@@ -227,7 +221,8 @@ th {
 
 @media (max-width: 969px) {
   .contacto {
-    grid-template-columns: 1fr; }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
   .formulario {
     margin: 55px auto; }
   .conjuntos {
@@ -237,7 +232,7 @@ th {
       margin-bottom: 100px; } }
 
 @media (max-width: 768px) {
-  .conjunto__mapa {
+  .conjunto__mapa, .conjunto__sociales {
     overflow: hidden;
     width: 250px;
     height: 250px; }
@@ -246,7 +241,7 @@ th {
     margin: auto; } }
 
 @media (max-width: 400px) {
-  .conjunto__mapa {
+  .conjunto__mapa, .conjunto__sociales {
     margin-left: 30px; }
   .formulario {
     padding: 50px;
@@ -277,6 +272,7 @@ th {
 
 @media (max-width: 969px) {
   .estudio__imagen-staff {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2em 2em 2.9em 2em;
     padding: 15px 0; }
@@ -293,7 +289,8 @@ th {
   .estudio-parrafo {
     width: 90%; }
   .estudio__imagen-staff {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin: 2em 2em 2.9em 2em;
     padding: 15px 0; } }
 
@@ -329,12 +326,15 @@ th {
 
 @media (max-width: 1200px) {
   .proyecto {
-    grid-template-columns: repeat(3, 300px); } }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media (max-width: 969px) {
   .proyecto {
-    grid-template-columns: repeat(2, 300px); } }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 768px) {
   .proyecto {
-    grid-template-columns: 300px; } }
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }

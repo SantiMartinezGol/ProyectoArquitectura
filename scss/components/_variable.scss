@@ -1,0 +1,13 @@
+$estilos:(
+    headcolor:  #212529,
+    backcolor: rgb(209, 209, 122) ,
+    fontcolor: black,
+    footcolor: #212529
+);
+
+@mixin templateGrid ($numcolum) { 
+
+    display: grid;
+    grid-template-columns: repeat($numcolum, 1fr);
+    
+}

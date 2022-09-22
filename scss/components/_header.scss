@@ -1,1 +1,5 @@
-/*Para cambios del header a traves de css en caso de sacar el boostrap/*
+@import './components/variable';
+/*Para cambios del header a traves de css en caso de sacar el boostrap*/
+header {
+    background-color: map-get($estilos,headcolor);
+}

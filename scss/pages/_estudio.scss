@@ -12,8 +12,7 @@
     }
 
     &__imagen-staff {
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+        @include templateGrid(4);
         padding: 25px 0;
         background-color: rgb(63, 34, 34);
         margin: 2em 2em 2.9em 2em;
@@ -36,7 +35,7 @@
 @media (max-width: 969px) {
 
     .estudio__imagen-staff {
-        grid-template-columns: repeat(2,1fr);
+        @include templateGrid(2);
         margin: 2em 2em 2.9em 2em;
         padding: 15px 0;
     }
@@ -64,7 +63,7 @@
     }
 
     .estudio__imagen-staff {
-        grid-template-columns: 1fr;
+        @include templateGrid(1);
         margin: 2em 2em 2.9em 2em;
         padding: 15px 0;
     }
