@@ -10,18 +10,6 @@ main {
   min-height: 95vh;
   font-size: 24px; }
 
-main h2 {
-  animation: slidein 1.5s;
-  text-shadow: 2px 2px 5px gray; }
-
-@keyframes slidein1 {
-  from {
-    margin-left: 100%;
-    width: 300%; }
-  to {
-    margin-left: 0;
-    width: 100%; } }
-
 .titulo {
   min-height: 50px; }
 
@@ -71,7 +59,7 @@ footer {
   clear: both; }
 
 body {
-  background-color: #d1d17a; }
+  background-color: #fbf1f1; }
 
 /*empieza carousel*/
 .contain {
@@ -188,10 +176,11 @@ body {
   color: white; }
 
 .formulario {
-  margin-top: 40px;
+  margin: 40px 0 80px;
   text-align: center;
   display: block;
-  background-color: #212529; }
+  background-color: #212529;
+  padding-bottom: 30px; }
   .formulario h4 {
     margin-top: 40px; }
   .formulario h6 {
@@ -215,6 +204,10 @@ fieldset {
     margin-top: 30px;
     font-size: 65%;
     color: #212529; }
+  .conjunto__sociales svg {
+    width: 40px;
+    height: 40px;
+    margin-top: 90px; }
 
 th {
   width: 30%; }
@@ -225,17 +218,19 @@ th {
     grid-template-columns: repeat(1, 1fr); }
   .formulario {
     margin: 55px auto; }
-  .conjuntos {
+  .conjunto {
     margin-top: -20px; }
-    .conjuntos__datos {
+    .conjunto__datos {
       margin-top: 45px;
-      margin-bottom: 100px; } }
+      margin-bottom: 0px; } }
 
 @media (max-width: 768px) {
-  .conjunto__mapa, .conjunto__sociales {
-    overflow: hidden;
-    width: 250px;
-    height: 250px; }
+  .conjunto {
+    margin-top: 25px; }
+    .conjunto__mapa, .conjunto__sociales {
+      overflow: hidden;
+      width: 300px;
+      height: 300px; }
   .formulario {
     padding: 10px;
     margin: auto; } }
@@ -321,8 +316,7 @@ th {
       color: black;
       transform: scale(1.05); }
     .proyecto__imagen h4 {
-      font-size: 20px;
-      padding: 0.5em 0 0.5 0; }
+      font-size: 20px; }
 
 @media (max-width: 1200px) {
   .proyecto {

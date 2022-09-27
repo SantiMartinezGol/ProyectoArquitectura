@@ -14,23 +14,6 @@ main {
     font-size: 24px;
 }
 
-main h2 {
-    animation: slidein 1.5s;
-    text-shadow: 2px 2px 5px gray;
-}   
-
-@keyframes slidein1 {
-    from {
-        margin-left: 100%;
-        width: 300%
-    }
-
-    to {
-        margin-left: 0;
-        width: 100%
-    }
-}
-
 .titulo {
    min-height: 50px;
 }
@@ -74,9 +57,4 @@ main h2 {
     .container{
         max-width:540px
     }
-
-
-
-
-    
 }

@@ -17,11 +17,11 @@
 }
 
 .formulario {
-    margin-top: 40px;
+    margin: 40px 0 80px;
     text-align: center;
     display: block;
     background-color: #212529;
-
+    padding-bottom: 30px;
     & h4 {
         margin-top: 40px;
     }
@@ -58,6 +58,12 @@ fieldset {
 
     &__sociales {
         @extend .conjunto__mapa;
+        
+        & svg {
+            width: 40px;
+            height: 40px;
+            margin-top: 90px;
+        }
     }
 }
 
@@ -75,24 +81,27 @@ th {
       margin: 55px auto;
     }
 
-    .conjuntos {
+    .conjunto {
         margin-top: -20px;
 
         &__datos {
             margin-top: 45px;
-            margin-bottom: 100px;
+            margin-bottom: 0px;
             }
     }
 }
 
 @media (max-width: 768px){
 
-    .conjunto__mapa {
-        overflow: hidden;
-        width: 250px;
-        height: 250px;
+    .conjunto {
+        margin-top: 25px;
+    
+        &__mapa {
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+        }
     }
-
     .formulario {
         padding: 10px;
         margin: auto;
