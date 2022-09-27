@@ -148,6 +148,44 @@ body{
     &__parrafo {
         width: 80%;
         margin: auto;
-        padding: 2em;
+    }
+}
+
+@media (max-width: 969px) {
+
+}
+
+@media (max-width: 768px){
+
+    .contenido {
+        font-size: 22px;
+
+        &__parrafo {
+            width: 90%;
+            padding: 0;
+            margin: 25px auto;
+        }
+    }
+}
+
+@media (max-width: 660px) {
+
+    .contenido {
+        font-size: 20px;
+        padding: 0;
+        width:100%;
+        margin: 0 auto;
+        background-color: map-get($estilos,backgr);
+
+        &__titulo {
+            margin-top: 40px;
+
+        }
+        
+        &__parrafo {
+            width: 90%;
+            padding: 0;
+            margin: 25px auto;
+        }
     }
 }

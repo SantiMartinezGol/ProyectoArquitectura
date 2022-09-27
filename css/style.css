@@ -158,8 +158,28 @@ body {
   margin: 0 auto; }
   .contenido__parrafo {
     width: 80%;
-    margin: auto;
-    padding: 2em; }
+    margin: auto; }
+
+@media (max-width: 768px) {
+  .contenido {
+    font-size: 22px; }
+    .contenido__parrafo {
+      width: 90%;
+      padding: 0;
+      margin: 25px auto; } }
+
+@media (max-width: 660px) {
+  .contenido {
+    font-size: 20px;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto; }
+    .contenido__titulo {
+      margin-top: 40px; }
+    .contenido__parrafo {
+      width: 90%;
+      padding: 0;
+      margin: 25px auto; } }
 
 .conta__title {
   margin-top: 100px; }
