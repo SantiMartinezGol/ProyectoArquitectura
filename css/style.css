@@ -42,10 +42,6 @@ main {
   .container {
     max-width: 540px; } }
 
-/*Para cambios del header a traves de css en caso de sacar el boostrap*/
-header {
-  background-color: #212529; }
-
 footer {
   margin-top: 50px;
   font-size: 18px;
@@ -331,7 +327,7 @@ th {
 
 .proyecto {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   gap: 40px;
   transition: all 0.3s; }
@@ -353,11 +349,6 @@ th {
     .proyecto__imagen h4 {
       font-size: 20px; }
 
-@media (max-width: 1200px) {
-  .proyecto {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); } }
-
 @media (max-width: 969px) {
   .proyecto {
     display: grid;
@@ -365,5 +356,79 @@ th {
 
 @media (max-width: 768px) {
   .proyecto {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); } }
+
+.volver a {
+  width: 100%;
+  display: block;
+  margin-top: 50px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 18px;
+  color: black; }
+
+.introduccion {
+  font-size: 22px;
+  text-align: justify;
+  margin-top: 90px;
+  float: left;
+  width: 30%; }
+  .introduccion h3 {
+    width: 100%; }
+  .introduccion p {
+    display: flex;
+    align-self: center; }
+
+.imageness {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 15px; }
+  .imageness img {
+    width: 100%; }
+
+.visor {
+  display: block;
+  width: 66.3%;
+  height: 500px;
+  float: right;
+  margin: 90px auto 15px auto;
+  border: 0 none;
+  max-width: 70%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11); }
+
+@media (max-width: 1200px) {
+  .introduccion {
+    font-size: 20px;
+    width: 30%; }
+  .visor {
+    width: 65%; }
+  .imageness {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 969px) {
+  .introduccion {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-top: 60px; }
+  .visor {
+    width: 100%;
+    float: none;
+    margin-top: 0;
+    max-width: none; }
+  .imageness {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 768px) {
+  .visor {
+    height: 400px; }
+  .imageness {
     display: grid;
     grid-template-columns: repeat(1, 1fr); } }

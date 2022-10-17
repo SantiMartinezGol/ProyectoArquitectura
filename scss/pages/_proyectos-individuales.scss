@@ -1,0 +1,103 @@
+.volver a {
+    width: 100%;
+    display: block;
+    margin-top: 50px;
+    text-align: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: map-get($estilos,fontcolor);
+}
+
+.introduccion {
+    font-size: 22px;
+    text-align: justify;
+    margin-top: 90px;
+    float: left;
+    width: 30%;
+    
+    & h3 {
+
+        width: 100%;
+
+    }
+    & p {
+        display: flex;
+        align-self: center;
+    }
+}
+
+.imageness {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    @include templateGrid(3);
+    justify-content: center;
+    gap: 15px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.visor {
+    display:block;
+    width: 66.3%;
+    height: 500px;
+    float: right;
+    margin: 90px auto 15px auto;
+    border:0 none;
+    max-width:70%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),0 2px 2px rgba(0,0,0,0.11),0 4px 4px rgba(0,0,0,0.11),0 6px 8px rgba(0,0,0,0.11),0 8px 16px rgba(0,0,0,0.11); 
+
+}
+
+@media (max-width: 1200px) {
+
+    .introduccion {
+        font-size: 20px;
+        width: 30%;
+    }
+
+    .visor {
+        width: 65%;
+    }
+
+    .imageness {
+        @include templateGrid(2);
+        
+    }
+}
+
+@media (max-width: 969px) {
+
+    .introduccion {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 25px;
+        margin-top: 60px;
+    }
+
+    .visor {
+        width: 100%;
+        float: none;
+        margin-top:0; 
+        max-width: none;
+        
+    }
+
+    .imageness {
+        @include templateGrid(2);
+        
+    }
+}
+
+@media (max-width: 768px){
+
+    .visor {
+        height: 400px;
+    }
+
+    .imageness {
+        @include templateGrid(1);
+    }
+}

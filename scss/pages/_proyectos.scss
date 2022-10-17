@@ -1,5 +1,5 @@
 .proyecto {
-    @include templateGrid(4);
+    @include templateGrid(3);
     justify-content: center;
     gap: 40px;
     transition: all 0.3s;
@@ -29,13 +29,6 @@
         }
     }
 
-}
-
-@media (max-width: 1200px) {
-
-    .proyecto {
-        @include templateGrid(3);;
-    }
 }
 
 @media (max-width: 969px) {
