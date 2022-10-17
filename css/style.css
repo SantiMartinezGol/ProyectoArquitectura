@@ -251,14 +251,14 @@ th {
     padding: 10px;
     margin: auto; } }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .conjunto__mapa, .conjunto__sociales {
     margin-left: 30px; }
   .formulario {
-    padding: 50px;
-    margin: 50px 0 50px -50px;
+    padding: 30px;
+    margin: 50px 0;
     background-color: #212529;
-    font-size: 10px; }
+    font-size: 12px; }
   .conjunto__datos {
     display: none;
     margin-top: 30px;
